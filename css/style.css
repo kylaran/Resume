@@ -1,0 +1,362 @@
+
+body{
+    font-family: 'Open Sans', Arial, Tahoma;
+    font-weight: 400;
+    font-size: 1em;
+    color: #363636;
+    background: #ededed;
+    }
+.container{
+    margin: 90px auto;
+    background: white;
+}
+p a {
+      color: #EC7263;
+}
+a{
+    color: #363636;
+}
+a:hover{
+     color: #EC7263;
+}
+.row{
+    margin-bottom: 15px;
+}
+.shared{
+    top: 20px;
+    float: right;
+    position: absolute;
+    right: 25px;
+}
+img.avatar {
+    border: 5px solid #ededed;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: -75px;
+    display: inline-block;
+    text-align: center; 
+}
+#text-header{
+    padding: 0;
+    font-size: 2.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.text-center{
+       text-align: center;
+}
+h1.font-style{
+    color: #EC7263;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+h1 span{
+     color: #EC7263;
+}
+p.info{
+    font-size: 13px;
+}
+hr{
+    margin: 1px 0;
+}
+.item-box{
+    float: left;
+    width: 100%;
+}
+.icon-left{
+    float: left !important;
+}
+.item-box .border-icon{
+    border-right: 1px solid #363636;
+    border-bottom: 1px solid #363636;
+    padding: 10px;
+    }
+.icon-right{
+    float: right !important;
+} 
+div{
+    display: block;
+}
+.item-box .title{
+     width: calc(100% - 55px);
+    font-size: 1.5em;
+    font-weight: 700;
+    opacity: 0.9;
+    
+}
+.item-box .description{
+    width: calc(100% - 55px);
+    font-size: 1.2em;
+    opacity: 0.7;
+}
+.only {
+    margin-top: 10px;
+}
+.item-skills{
+    background: #F0563D;
+    font-size: 12px;
+    color: white;
+    font-weight: 700;
+    padding: 5px 10px;
+      text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.progress{
+    height: 30px;
+    margin: 5px 0px;  
+}
+ div.title{
+    font-size: 16px;
+    font-weight: bolder;
+    }
+
+ div.description{
+    font-size: 13px;
+    padding: 1px;
+ }
+ #education{
+     list-style: none;
+     position: relative;
+     margin-top: 10px;
+     padding-left: 0;
+    
+ }
+ #education .content:after, #education .content:before{
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: -20px; top: 10px; /*Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-right: 10px solid #ededed; /* Добавляем треугольник */
+    z-index: -1;
+}
+#education .year{
+    text-align: center;
+    width: 15%;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px;
+    display: inline-block;
+    background: white;
+}
+ #education .content{
+    width: 83%;
+    padding: 10px;
+    background: #ededed;
+    position: relative;
+}
+
+#education li {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    float: left;
+    margin: 5px 0 10px;
+}
+
+#education::before{
+    position: absolute;
+    list-style: none;
+    width: 5px;
+    height: 100%;
+    display: block;
+    background: #F0563D;
+    content: " ";
+    left: 45px;
+    top: 0;
+}
+.border-skills{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.border-left{ 
+    border-top: 3px solid #a9a9a9;
+    border-left: 3px solid #a9a9a9;
+    width: 25%;
+    height: 10px;
+
+}
+.border-right{ 
+    border-top: 3px solid #a9a9a9;
+    border-right: 3px solid #a9a9a9;
+    width: 25%;
+    height: 10px;
+}
+.legend{
+    width: 16.4%;
+    font-size: 11px;
+    color:#a9a9a9;
+    font-weight: bolder;
+}
+.legend-right{
+    text-align: right;
+    width: 15.7%;
+    font-size: 11px;
+    color:#a9a9a9;
+    font-weight: bolder;
+}
+.legend-center{
+    text-align: center;
+    width: 17.7%;
+    font-weight: bolder;
+    font-size: 11px;
+    color:#a9a9a9;
+}
+.languages .skill{
+    margin: 10px 0;
+   border-bottom: 1px solid #a9a9a9;
+   padding-bottom: 15px;
+   font-size: 14px;
+   width: 100%;
+}
+
+.skill-size{
+    width: 30%;
+    padding-top: 5px;
+}
+.rating {
+  width: 70%;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  font-size: 20px;
+   }
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color: red;
+}
+.rating > span:before{
+   content: "\2605";
+   position: absolute;
+   color:#a9a9a9;
+
+}
+ span.active:before{
+   content: "\2605";
+   position: absolute;
+   color:red;
+
+}
+
+li.active>a{
+    width: 30%;
+    background-color: #F0563D !important;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 0;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+}
+div.hobbies > ul >li>a{
+    background-color: #F0563D !important;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 0;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.nav-stacked>li+li {
+    margin-top: 0; 
+}
+
+@media only screen and (max-width : 767px) {
+    li.active>a{
+    background-color: #F0563D !important;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 0;
+    float: none;
+    font-weight: bold;
+}
+    #education .year{
+    width: 15%;
+    font-size: 10px;
+    font-weight: bolder;
+    padding: 10px;
+    display: inline-block;
+    background: white;
+}
+#education::before{
+    position: absolute;
+    list-style: none;
+    width: 5px;
+    height: 100%;
+    display: block;
+    background: #F0563D;
+    content: " ";
+    left: 48px;
+    top: 0;
+}
+ #education .content:after, #education .content:before{
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: -18px; top: 7px; /*Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-right: 10px solid #ededed; /* Добавляем треугольник */
+    z-index: -1;
+}
+#education .content{
+    width: 83%;
+    padding: 5px;
+    background: #ededed;
+    position: relative;
+    
+}
+ div.title{
+    font-size: 13px;
+    font-weight: bolder;
+    }
+
+ div.description{
+    font-size: 10px;
+    padding: 1px;
+ }
+}
+@media only screen and (max-width : 992px) {
+    li.active>a{
+    width: auto;
+    background-color: #F0563D !important;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 0;
+    float: none;
+    font-weight: bold;
+    }
+     
+}
+@media only screen and (max-width : 480px) {
+   
+    #education::before{
+    position: absolute;
+    list-style: none;
+    width: 5px;
+    height: 100%;
+    display: block;
+    background: #F0563D;
+    content: " ";
+    left: 28px;
+    top: 0;
+}
+
+}
