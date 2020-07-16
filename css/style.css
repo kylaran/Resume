@@ -3,24 +3,25 @@ body{
     font-family: 'Open Sans', Arial, Tahoma;
     font-weight: 400;
     font-size: 1em;
-    color: #363636;
-    background: #ededed;
+    color: #696969;
+    background: #212121;
     }
 .container{
     margin: 90px auto;
-    background: white;
+    background: #212121;
 }
 p a {
-      color: #EC7263;
+      color: #09ed9a;
 }
 a{
-    color: #363636;
+    color: #856161;
 }
 a:hover{
-     color: #EC7263;
+     color: #09ed9a;
 }
 .row{
     margin-bottom: 15px;
+	width: 100%;
 }
 .shared{
     top: 20px;
@@ -29,7 +30,7 @@ a:hover{
     right: 25px;
 }
 img.avatar {
-    border: 5px solid #ededed;
+    border: 5px solid #212121;
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -46,22 +47,37 @@ img.avatar {
 }
 .text-center{
        text-align: center;
+	   color: #09ed9a;
 }
 h1.font-style{
-    color: #EC7263;
+    color: white;
     font-size: 1.8em;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-h1 span{
-     color: #EC7263;
+h2.font-style{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+h2 sup{
+     color: #09ed9a;
+}
+h1 sup{
+     color: #696969;
+}
+h2 span{
+     color: white;
 }
 p.info{
+	color: #696969;
     font-size: 13px;
 }
 hr{
-    margin: 1px 0;
+    margin: 10px 0;
 }
 .item-box{
     float: left;
@@ -71,13 +87,18 @@ hr{
     float: left !important;
 }
 .item-box .border-icon{
-    border-right: 1px solid #363636;
-    border-bottom: 1px solid #363636;
+    border-right: 1px solid #856161;
+    border-bottom: 1px solid #856161;
     padding: 10px;
     }
 .icon-right{
     float: right !important;
 } 
+div.border 
+{
+	border-right-style: double;
+	border-right-color: #09ed9a;
+}
 div{
     display: block;
 }
@@ -97,7 +118,7 @@ div{
     margin-top: 10px;
 }
 .item-skills{
-    background: #F0563D;
+    background: #09946a;
     font-size: 12px;
     color: white;
     font-weight: 700;
@@ -128,27 +149,37 @@ div{
     
  }
  #education .content:after, #education .content:before{
+    color: #8c8c7d;
     content: ''; 
     position: absolute; /* Абсолютное позиционирование */
-    left: -20px; top: 10px; /*Положение треугольника */
-    border: 10px solid transparent; /* Прозрачные границы */
-    border-right: 10px solid #ededed; /* Добавляем треугольник */
-    z-index: -1;
+    left: -14px; 
+	top: 7px; /*Положение треугольника */
+    border: 2px solid; /* Прозрачные границы */
+	border-color: #09ed9a;
+    border-right: 10px solid #09ed9a; /* Добавляем треугольник */
+	background-color: #09ed9a;
+    z-index: 1;
 }
 #education .year{
     text-align: center;
+	border:2px solid; /* Прозрачные границы */
+	color: #8c8c7d;
+	border-color: #09ed9a;
     width: 15%;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bolder;
     padding: 10px;
     display: inline-block;
-    background: white;
+    background: #212121;
 }
  #education .content{
+	 color: #8c8c7d;
     width: 83%;
     padding: 10px;
-    background: #ededed;
+    background: #212121;
     position: relative;
+	border: 2px solid; /* Прозрачные границы */
+	border-color: #09ed9a;
 }
 
 #education li {
@@ -157,6 +188,7 @@ div{
     position: relative;
     float: left;
     margin: 5px 0 10px;
+	border-color: #09ed9a;
 }
 
 #education::before{
@@ -165,10 +197,11 @@ div{
     width: 5px;
     height: 100%;
     display: block;
-    background: #F0563D;
+    background: #09946a;
     content: " ";
     left: 45px;
     top: 0;
+	border-color: #09ed9a;
 }
 .border-skills{
     width: 100%;
@@ -211,48 +244,50 @@ div{
 .languages .skill{
     margin: 10px 0;
    border-bottom: 1px solid #a9a9a9;
-   padding-bottom: 15px;
-   font-size: 14px;
+   padding-bottom: 10px;
+   font-size: 15px;
    width: 100%;
 }
 
 .skill-size{
-    width: 30%;
+    width: 15%;
     padding-top: 5px;
 }
 .rating {
-  width: 70%;
+  width: 60%;
   unicode-bidi: bidi-override;
   direction: rtl;
 }
 .rating > span {
   display: inline-block;
   position: relative;
-  width: 20px;
-  font-size: 20px;
+  width: 25px;
+  font-size: 25px;
    }
 .rating > span:hover:before,
 .rating > span:hover ~ span:before {
-   content: "\2605";
+   content: "\26AC";
    position: absolute;
-   color: red;
+   color: #09ed9a;
+   font-size: 25px;
 }
 .rating > span:before{
-   content: "\2605";
+   content: "\26AC";
    position: absolute;
-   color:#a9a9a9;
+   color:white;
+      font-size: 25px;
 
 }
  span.active:before{
-   content: "\2605";
+   content: "\26AC";
    position: absolute;
-   color:red;
-
+   color:#09ed9a;
+   font-size: 25px;
 }
 
 li.active>a{
     width: 30%;
-    background-color: #F0563D !important;
+    background-color: #09946a !important;
     font-size: 12px;
     margin-right: 10px;
     margin-top: 5px;
@@ -263,7 +298,7 @@ li.active>a{
     text-align: center;
 }
 div.hobbies > ul >li>a{
-    background-color: #F0563D !important;
+    background-color: #09946a !important;
     font-size: 12px;
     margin-right: 10px;
     margin-top: 5px;
@@ -280,7 +315,10 @@ div.hobbies > ul >li>a{
 
 @media only screen and (max-width : 767px) {
     li.active>a{
-    background-color: #F0563D !important;
+	color: #8c8c7d;
+	border: 2px solid; /* Прозрачные границы */
+	border-color: #09ed9a;
+    background-color: #09946a !important;
     font-size: 12px;
     margin-top: 10px;
     padding: 5px;
@@ -289,53 +327,64 @@ div.hobbies > ul >li>a{
     font-weight: bold;
 }
     #education .year{
+	border:2px solid; /* Прозрачные границы */
+	color: #8c8c7d;
+	border-color: #09ed9a;
     width: 15%;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bolder;
     padding: 10px;
     display: inline-block;
-    background: white;
+    background: #212121;
 }
 #education::before{
     position: absolute;
+	color: #8c8c7d;
     list-style: none;
     width: 5px;
     height: 100%;
     display: block;
-    background: #F0563D;
+    background: #09946a;
     content: " ";
     left: 48px;
     top: 0;
 }
  #education .content:after, #education .content:before{
+	color: #8c8c7d;
     content: ''; 
     position: absolute; /* Абсолютное позиционирование */
-    left: -18px; top: 7px; /*Положение треугольника */
-    border: 10px solid transparent; /* Прозрачные границы */
-    border-right: 10px solid #ededed; /* Добавляем треугольник */
-    z-index: -1;
+    left: -14px; 
+	top: 7px; /*Положение треугольника */
+    border: 2px solid transparent; /* Прозрачные границы */
+	border-color: #09ed9a;
+    border-right: 10px solid #09ed9a; /* Добавляем треугольник */
+	background-color: #09ed9a;
+    z-index: 1;
 }
 #education .content{
+	color: #8c8c7d;
+	border: 2px solid transparent; /* Прозрачные границы */
+	border-color: #09ed9a;
     width: 83%;
     padding: 5px;
-    background: #ededed;
+    background: #212121;
     position: relative;
     
 }
  div.title{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bolder;
     }
 
  div.description{
-    font-size: 10px;
+    font-size: 12px;
     padding: 1px;
  }
 }
 @media only screen and (max-width : 992px) {
     li.active>a{
     width: auto;
-    background-color: #F0563D !important;
+    background-color: #09946a !important;
     font-size: 12px;
     margin-top: 10px;
     padding: 5px;
@@ -353,7 +402,7 @@ div.hobbies > ul >li>a{
     width: 5px;
     height: 100%;
     display: block;
-    background: #F0563D;
+    background: #09946a;
     content: " ";
     left: 28px;
     top: 0;
